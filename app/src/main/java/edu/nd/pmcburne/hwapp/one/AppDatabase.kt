@@ -10,7 +10,7 @@ abstract class AppDatabase : RoomDatabase() { // creating database to store game
     abstract fun gameDao(): GameDAO
 
     companion object {
-        // !!!
+
         @Volatile private var INSTANCE: AppDatabase? = null
 
         fun getInstance(context: Context): AppDatabase {
